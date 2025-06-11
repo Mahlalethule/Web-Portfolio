@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Personal Portfolio Website</title>
+        <link rel="stylesheet" href="https://cdn.lineicons.com/4.0/lineicons.css">
+        <!-- Add Font Awesome for icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="Nkanyiso Dube/Pin-logo 2.png" class="logo" alt="Logo">
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li> 
+                        <li><a href="#about">About</a></li> 
+                        <li><a href="#services">Services</a></li> 
+                        <li><a href="#portfolio">Portfolio</a></li> 
+                        <li><a href="#contact">Contact</a></li>
+                         <i class="fa-sharp fa-solid fa-xmark" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                </nav>
+            </div>
+            <div class="header-text">
+                <p>GIS Technician</p>
+                <h1>Hi, I'm <span>Nkanyiso</span><br>Dube from Bulawayo Zimbabwe</h1>
+            </div>
+        </div> 
+        <!-- ----------- about ----------- -->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="Nkanyiso Dube/field-work.jpg" alt="User photo">
+                    </div>   
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About me</h1>
+                        <p>I am a dedicated GIS student at the National University of Science and Technology, Zimbabwe, with skills in mapping, spatial analysis, and data visualization using tools such as ArcGIS Pro, QGIS, and Power BI. I am passionate about leveraging geospatial technologies to address real-world challenges and generate meaningful insights.</p>
+                        <p>Currently pursuing a Bachelor of Technology in Geographic Information Systems in Natural Resource Management, I combine technical expertise with a strong commitment to producing actionable visualizations for urban planning, disaster management, and environmental protection.</p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Remote Sensing & Satellite Image Analysis</span><br>Satellite imagery processing</li>
+                                <li><span>Field Data Collection</span><br>GPS-based data collection</li>
+                                <li><span>Spatial Data Visualization</span><br>Thematic and land use maps</li>
+                                <li><span>Cartographic Design</span><br>Map Design</li>
+                                <li><span>Google Earth Engine Scripting</span><br>JavaScript-based spatial analysis</li>
+                                <li><span>GIS Software</span><br>QGIS, ArcGIS Pro, GEE, Google Earth Pro, AutoCAD, Geographic Calculator</li>
+                            </ul>
+                            
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>2024-2025</span><br>Dabane Water Workshops (Internship)</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2021</span><br>Diploma in Geographic Information Systems & Remote Sensing
+                                (Lupane State University)</li>
+                                <li><span>2022-Current</span><br>Bachelor's degree in Geographic Information Systems & Remote Sensing In Natural Resource Management(NUST)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--------------services------------------>
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title">My Services</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="lni lni-bar-chart"></i>
+                        <h2>Data Visualization</h2>
+                        <p>Creating insightful visual representations of spatial data for better decision-making.</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="lni lni-code"></i>
+                        <h2>Google Earth Engine (GEE)</h2>
+                        <p>Cloud-based geospatial analysis using JavaScript programming.</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="lni lni-layers"></i>
+                        <h2>Land Use & Land Cover</h2>
+                        <p>Classification and analysis of land features using remote sensing techniques.</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="lni lni-map"></i>
+                        <h2>Cartography</h2>
+                        <p>Designing professional, accurate, and visually appealing maps.</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="lni lni-database"></i>
+                        <h2>Database Design and Management</h2>
+                        <p>Structuring and maintaining spatial databases for efficient data access.</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="lni lni-drop"></i>
+                        <h2>Hydrology</h2>
+                        <p>Water resource analysis and watershed modeling using GIS tools.</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!--------------portfolio------------------>
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Work</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="Nkanyiso Dube/Pic 1.jpg">
+                        <div class="layer">
+                            <h3>GIS Project 1</h3>
+                            <p>Land use classification for Bulawayo.</p>
+                            <a href="#"><i class="fas fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="Nkanyiso Dube/Pic 2.jpg">
+                        <div class="layer">
+                            <h3>GIS Project 2</h3>
+                            <p>Hydrological modeling in Matabeleland.</p>
+                            <a href="#"><i class="fas fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="Nkanyiso Dube/NDVI INSIZA.jpg">
+                        <div class="layer">
+                            <h3>NDVI Analysis</h3>
+                            <p>Vegetation health assessment.</p>
+                            <a href="#"><i class="fas fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="Nkanyiso Dube/LULC.png">
+                        <div class="layer">
+                            <h3>Land Cover Map</h3>
+                            <p>Regional land cover changes.</p>
+                            <a href="#"><i class="fas fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="Nkanyiso Dube/soil.png">
+                        <div class="layer">
+                            <h3>Soil Erosion Study</h3>
+                            <p>Erosion risk mapping.</p>
+                            <a href="#"><i class="fas fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn">See more</a>
+            </div> 
+        </div>
+        <!--------------contact----------------->
+       <div id="contact">
+    <div class="container">
+        <h1 class="sub-title">Contact Me</h1>
+        <div class="row">
+            <div class="contact-left">
+                <p><i class="fa-solid fa-paper-plane"></i> nkanyisodube@live.com</p>
+                <p><i class="fa-solid fa-paper-plane"></i> dubenkanyiso21@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i> +263 77 614 0468</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/nkanyiso-dube-mahlalethule" target="_blank">
+                        <i class="lni lni-linkedin"></i></a>
+                </div>
+                <a href="Nkanyiso Dube/My Cv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div> 
+            <div class="copyright">
+                <p>Copyright &COPY; Nkanyiso Dube. Mahlalethule</p>
+            </div>
+        </div>
+    </div>
+</div>
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+            
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+        </script>
+
+        <script>
+            var sidemenu = document.getElementById("sidemenu");
+
+            function openmenu(){
+                sidemenu.style.right = "0"
+            }
+            function closemenu(){
+                sidemenu.style.right = "-200px";
+            }
+        </script>
+        <script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbxkpUnMCCQSyPj3mSVHlHiPmB8wNA1Zs6ghlwfMfwzUc4RsryvssyzESBq9A9nFsQlF/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message sent successfully"
+        setTimeout(function(){
+            msg.innerHTML = ""
+        },5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+    </body>
+</html>
